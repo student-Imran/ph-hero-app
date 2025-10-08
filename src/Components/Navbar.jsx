@@ -21,7 +21,7 @@ const Navbar = () => {
     </div>
    <Link to='/' className='pl-2 md:pl-8 lg:pl-10 flex items-center gap-2 btn-ghost text-xl'>
   <img src={logo} alt="Logo" className='w-8 h-8' />
-  <p className='m-0 text-blue-500'>Hero.IO</p>
+  <p className='m-0 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Hero.IO</p>
   </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -33,10 +33,10 @@ const Navbar = () => {
         <li><NavLink className="font-semibold" to="/installed">Installation</NavLink></li>
     </ul>
   </div>
-  <div className="navbar-end pr-2 md:pr-8 lg:pr-10">
+  <div className="navbar-end pr-2 md:pr-8 lg:pr-10 ">
     <button 
   onClick={() => window.open('https://github.com/student-imran', '_blank')}
-  className="btn btn-primary flex items-center gap-2"
+  className="btn text-white  flex items-center gap-2 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]"
 >
   <span className='flex justify-around gap-2'><img src={github} alt="" /> <p>Contribute</p> </span>
 </button>

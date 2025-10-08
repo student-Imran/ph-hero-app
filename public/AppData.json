@@ -1,0 +1,294 @@
+ [
+    
+    
+    
+  
+    {
+      "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400",
+      "title": "Productivity Pro",
+      "companyName": "Efficiency Labs Inc.",
+      "id": 1,
+      "description": "Productivity Pro is an all-in-one task management and time tracking application designed to help individuals and teams achieve peak performance. With intuitive project boards, automated workflow templates, and smart scheduling algorithms, this app transforms how you organize your workday. Features include priority-based task sorting, collaborative team spaces, progress analytics, and integration with popular calendar apps. The intelligent reminder system ensures you never miss important deadlines while the focus mode minimizes distractions. Perfect for freelancers, corporate teams, and students looking to maximize their efficiency and accomplish more in less time with detailed performance insights.",
+      "size": 84.5,
+      "reviews": 12478,
+      "ratingAvg": 4.7,
+      "downloads": "9M",
+      "ratings": [
+        { "name": "1 star", "count": 187 },
+        { "name": "2 star", "count": 374 },
+        { "name": "3 star", "count": 1122 },
+        { "name": "4 star", "count": 4367 },
+        { "name": "5 star", "count": 6428 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+      "title": "FitTrack Wellness",
+      "companyName": "HealthTech Solutions",
+      "id": 2,
+      "description": "FitTrack Wellness revolutionizes personal fitness with comprehensive health monitoring and personalized workout plans. This advanced fitness application combines AI-powered exercise recommendations with detailed health analytics including heart rate monitoring, sleep pattern analysis, and nutrition tracking. Users can access thousands of guided workout videos, create custom fitness challenges, and join community groups for motivation. The app features smart calorie counting, water intake reminders, meditation sessions, and progress photo journals. With seamless integration with popular wearables and medical devices, FitTrack provides professional-grade health insights normally available only in clinical settings, making advanced wellness accessible to everyone.",
+      "size": 156.3,
+      "reviews": 8923,
+      "ratingAvg": 4.5,
+      "downloads": "8M",
+      "ratings": [
+        { "name": "1 star", "count": 223 },
+        { "name": "2 star", "count": 446 },
+        { "name": "3 star", "count": 1338 },
+        { "name": "4 star", "count": 3569 },
+        { "name": "5 star", "count": 3347 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+      "title": "FinanceFlow Manager",
+      "companyName": "MoneyMaster Technologies",
+      "id": 3,
+      "description": "FinanceFlow Manager offers complete financial control with sophisticated budgeting tools and investment tracking capabilities. This comprehensive money management application provides real-time expense categorization, bill payment reminders, savings goal tracking, and investment portfolio analysis. Features include automated bank synchronization, tax preparation assistance, credit score monitoring, and retirement planning calculators. The app's predictive analytics help users identify spending patterns and suggest optimization strategies while the secure encryption ensures complete financial data protection. Perfect for individuals, families, and small business owners seeking to achieve financial freedom through intelligent money management, investment growth strategies, and comprehensive wealth building techniques.",
+      "size": 92.7,
+      "reviews": "5M",
+      "ratingAvg": 4.8,
+      "downloads": "6M",
+      "ratings": [
+        { "name": "1 star", "count": 156 },
+        { "name": "2 star", "count": 312 },
+        { "name": "3 star", "count": 937 },
+        { "name": "4 star", "count": 4685 },
+        { "name": "5 star", "count": 9542 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400",
+      "title": "CreativeCanvas Pro",
+      "companyName": "Digital Arts Studio",
+      "id": 4,
+      "description": "CreativeCanvas Pro empowers digital artists and designers with professional-grade tools previously available only in desktop software. This mobile design studio features advanced layering systems, custom brush engines, vector drawing capabilities, and photo editing tools rivaling premium computer applications. Users can create stunning illustrations, manipulate photographs, design marketing materials, and produce digital artwork with precision control. The app supports pressure-sensitive stylus input, offers hundreds of professionally designed templates, and provides cloud synchronization across devices. Whether you're a professional graphic designer, hobbyist photographer, or social media content creator, CreativeCanvas delivers studio-quality creative tools in a mobile-friendly interface.",
+      "size": 278.9,
+      "reviews": "7M",
+      "ratingAvg": 4.6,
+      "downloads": "9M",
+      "ratings": [
+        { "name": "1 star", "count": 148 },
+        { "name": "2 star", "count": 297 },
+        { "name": "3 star", "count": 891 },
+        { "name": "4 star", "count": 2970 },
+        { "name": "5 star", "count": 3126 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+      "title": "LanguageMaster AI",
+      "companyName": "Global Education Systems",
+      "id": 5,
+      "description": "LanguageMaster AI transforms language learning through artificial intelligence and personalized curriculum development. This innovative application offers comprehensive courses in over 40 languages with speech recognition technology, cultural immersion experiences, and adaptive learning algorithms. Features include real-time pronunciation feedback, conversational practice with AI tutors, grammar exercises, vocabulary builders, and cultural lessons. The app tracks progress across all language skills and creates customized study plans based on individual learning patterns and goals. Whether preparing for international travel, business communications, or personal enrichment, LanguageMaster provides an engaging and effective path to fluency with continuous assessment and motivational achievement systems.",
+      "size": 134.2,
+      "reviews": 18945,
+      "ratingAvg": 4.9,
+      "downloads": "10M",
+      "ratings": [
+        { "name": "1 star", "count": 95 },
+        { "name": "2 star", "count": 189 },
+        { "name": "3 star", "count": 568 },
+        { "name": "4 star", "count": 3789 },
+        { "name": "5 star", "count": 14304 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+      "title": "RecipeBox Chef",
+      "companyName": "Culinary Innovations",
+      "id": 6,
+      "description": "RecipeBox Chef revolutionizes home cooking with smart recipe management, meal planning, and grocery shopping features. This comprehensive culinary application offers thousands of professionally curated recipes with step-by-step video instructions, nutritional analysis, and dietary customization options. Users can create personalized cookbooks, generate shopping lists automatically, plan weekly menus, and discover new dishes based on available ingredients. Advanced features include cooking timer integration, portion scaling calculators, dietary restriction filters, and social sharing capabilities. The app learns user preferences over time to suggest perfect recipes and helps reduce food waste through intelligent ingredient usage tracking.",
+      "size": 87.6,
+      "reviews": 11234,
+      "ratingAvg": 4.4,
+      "downloads": "3M",
+      "ratings": [
+        { "name": "1 star", "count": 337 },
+        { "name": "2 star", "count": 674 },
+        { "name": "3 star", "count": 2022 },
+        { "name": "4 star", "count": 4493 },
+        { "name": "5 star", "count": 3708 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+      "title": "TravelCompanion Plus",
+      "companyName": "Adventure Tech Group",
+      "id": 7,
+      "description": "TravelCompanion Plus offers comprehensive travel planning with real-time itinerary management and destination intelligence. This feature-rich travel application provides flight and hotel booking, local attraction recommendations, weather forecasts, currency converters, and language translation tools. Users can create detailed trip plans, access offline maps, receive travel alerts, and discover hidden gems through local expert recommendations. The app includes emergency assistance features, expense tracking, photo journal creation, and social sharing options. Whether planning business trips, family vacations, or adventurous expeditions, TravelCompanion ensures smooth travel experiences with intelligent suggestions and comprehensive destination information.",
+      "size": 118.3,
+      "reviews": 8765,
+      "ratingAvg": 4.3,
+      "downloads": "7M",
+      "ratings": [
+        { "name": "1 star", "count": 438 },
+        { "name": "2 star", "count": 876 },
+        { "name": "3 star", "count": 2628 },
+        { "name": "4 star", "count": 3504 },
+        { "name": "5 star", "count": 1319 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+      "title": "Mindful Meditation",
+      "companyName": "Wellness Digital",
+      "id": 8,
+      "description": "Mindful Meditation provides guided meditation sessions, sleep stories, and stress management techniques for mental wellness. This comprehensive mindfulness application offers hundreds of meditation programs tailored for anxiety reduction, focus improvement, sleep enhancement, and emotional balance. Features include progress tracking, personalized session recommendations, ambient soundscapes, breathing exercises, and daily mindfulness reminders. The app incorporates scientifically validated techniques from cognitive behavioral therapy and mindfulness-based stress reduction programs. Users can join community challenges, access expert-led courses, and develop consistent meditation practices with structured programs designed for beginners through advanced practitioners.",
+      "size": 76.8,
+      "reviews": 14321,
+      "ratingAvg": 4.7,
+      "downloads": "9M",
+      "ratings": [
+        { "name": "1 star", "count": 215 },
+        { "name": "2 star", "count": 430 },
+        { "name": "3 star", "count": 1290 },
+        { "name": "4 star", "count": 4299 },
+        { "name": "5 star", "count": 8087 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+      "title": "PhotoPerfect Editor",
+      "companyName": "Visual Arts Digital",
+      "id": 9,
+      "description": "PhotoPerfect Editor delivers professional photo editing capabilities with AI-powered enhancement tools and creative filters. This advanced image editing application features automatic background removal, object recognition, portrait retouching, color correction, and artistic filter applications. Users can create collages, apply text overlays, remove unwanted objects, and transform ordinary photos into stunning visual creations. The app supports high-resolution image processing, offers cloud storage integration, and provides social media optimization for various platform requirements. Whether editing personal photos, creating marketing materials, or producing social media content, PhotoPerfect provides intuitive tools with professional results.",
+      "size": 203.4,
+      "reviews": 9876,
+      "ratingAvg": 4.5,
+      "downloads": "3M",
+      "ratings": [
+        { "name": "1 star", "count": 247 },
+        { "name": "2 star", "count": 494 },
+        { "name": "3 star", "count": 1482 },
+        { "name": "4 star", "count": 3952 },
+        { "name": "5 star", "count": 3701 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+      "title": "StudySmart Academy",
+      "companyName": "Education Innovation Labs",
+      "id": 10,
+      "description": "StudySmart Academy revolutionizes academic learning with interactive courses, practice tests, and personalized study plans. This comprehensive educational platform offers curriculum-aligned content for students from elementary through university levels across mathematics, sciences, languages, and humanities. Features include video lessons, interactive exercises, progress analytics, peer discussion forums, and expert tutor access. The app's adaptive learning technology identifies knowledge gaps and creates customized study schedules while gamification elements maintain engagement. Perfect for exam preparation, homework assistance, and skill development with comprehensive subject coverage and continuous assessment tools.",
+      "size": 167.9,
+      "reviews": 13245,
+      "ratingAvg": 4.6,
+      "downloads": "10M",
+      "ratings": [
+        { "name": "1 star", "count": 265 },
+        { "name": "2 star", "count": 530 },
+        { "name": "3 star", "count": 1590 },
+        { "name": "4 star", "count": 3975 },
+        { "name": "5 star", "count": 6885 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+      "title": "MusicMaestro Studio",
+      "companyName": "AudioTech Productions",
+      "id": 11,
+      "description": "MusicMaestro Studio provides professional music creation tools with virtual instruments, recording capabilities, and mixing features. This comprehensive music production application offers multi-track recording, virtual synthesizers, drum machines, audio effects, and mastering tools previously available only in expensive studio software. Users can compose original music, record vocals and instruments, apply professional effects, and export studio-quality audio files. The app includes royalty-free sample libraries, chord progression helpers, tempo matching technology, and social sharing features. Whether you're an aspiring musician, podcast producer, or professional composer, MusicMaestro delivers powerful creative tools in an accessible mobile format.",
+      "size": 312.7,
+      "reviews": 6543,
+      "ratingAvg": 4.4,
+      "downloads": "5M",
+      "ratings": [
+        { "name": "1 star", "count": 327 },
+        { "name": "2 star", "count": 654 },
+        { "name": "3 star", "count": 1962 },
+        { "name": "4 star", "count": 2616 },
+        { "name": "5 star", "count": 984 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+      "title": "SmartHome Controller",
+      "companyName": "IoT Solutions Inc.",
+      "id": 12,
+      "description": "SmartHome Controller centralizes control of all smart home devices with automation routines and energy monitoring features. This comprehensive home automation application supports thousands of compatible devices including smart lights, thermostats, security cameras, door locks, and entertainment systems. Users can create custom automation scenes, set energy usage alerts, monitor home security, and control devices through voice commands or location-based triggers. The app provides detailed energy consumption analytics, maintenance reminders, and integration with popular smart home ecosystems. Whether managing a single apartment or comprehensive smart home system, this application delivers seamless control and intelligent automation for modern connected living.",
+      "size": 95.2,
+      "reviews": 7654,
+      "ratingAvg": 4.2,
+      "downloads": "6M",
+      "ratings": [
+        { "name": "1 star", "count": 459 },
+        { "name": "2 star", "count": 918 },
+        { "name": "3 star", "count": 2754 },
+        { "name": "4 star", "count": 3062 },
+        { "name": "5 star", "count": 461 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+      "title": "BusinessCard Designer",
+      "companyName": "Professional Print Solutions",
+      "id": 13,
+      "description": "BusinessCard Designer enables professional business card creation with customizable templates and instant printing options. This comprehensive design application offers hundreds of professionally designed templates, custom layout tools, font libraries, and color schemes for creating stunning business cards. Users can import company logos, add QR codes, include social media links, and preview designs in realistic 3D mockups. The app provides high-resolution export options, direct printing services, and digital sharing capabilities. Perfect for entrepreneurs, freelancers, and corporate professionals seeking to create memorable first impressions with professionally designed business cards without graphic design experience.",
+      "size": 88.4,
+      "reviews": 5432,
+      "ratingAvg": 4.3,
+      "downloads": "8M",
+      "ratings": [
+        { "name": "1 star", "count": 271 },
+        { "name": "2 star", "count": 543 },
+        { "name": "3 star", "count": 1629 },
+        { "name": "4 star", "count": 2172 },
+        { "name": "5 star", "count": 817 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+      "title": "WeatherMaster Pro",
+      "companyName": "Climate Analytics Systems",
+      "id": 14,
+      "description": "WeatherMaster Pro delivers hyper-local weather forecasts with detailed meteorological data and severe weather alerts. This advanced weather application provides minute-by-minute precipitation forecasts, extended 15-day outlooks, hurricane tracking, and agricultural weather information. Features include interactive radar maps, weather history data, air quality indexes, pollen counts, and marine weather conditions. The app's intelligent notification system provides severe weather warnings, precipitation alerts, and ideal outdoor activity timing suggestions. Whether planning daily activities, agricultural operations, or outdoor events, WeatherMaster offers comprehensive meteorological information with professional-grade accuracy and user-friendly presentation.",
+      "size": 73.1,
+      "reviews": 19876,
+      "ratingAvg": 4.8,
+      "downloads": "4M",
+      "ratings": [
+        { "name": "1 star", "count": 199 },
+        { "name": "2 star", "count": 397 },
+        { "name": "3 star", "count": 1192 },
+        { "name": "4 star", "count": 3973 },
+        { "name": "5 star", "count": 14115 }
+      ]
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400",
+      "title": "CodeMaster Developer",
+      "companyName": "Developer Tools Inc.",
+      "id": 15,
+      "description": "CodeMaster Developer provides mobile coding environment with syntax highlighting, debugging tools, and project management features. This comprehensive development application supports multiple programming languages including JavaScript, Python, HTML/CSS, Java, and C++ with intelligent code completion and error detection. Features include Git integration, terminal access, package management, and live preview capabilities. Developers can write, test, and deploy code directly from mobile devices with cloud synchronization and collaboration tools. Perfect for learning programming concepts, quick code edits, or full project development when away from traditional computer workstations with professional-grade development tools.",
+      "size": 189.6,
+      "reviews": 8765,
+      "ratingAvg": 4.5,
+      "downloads": "7M",
+      "ratings": [
+        { "name": "1 star", "count": 263 },
+        { "name": "2 star", "count": 526 },
+        { "name": "3 star", "count": 1578 },
+        { "name": "4 star", "count": 3506 },
+        { "name": "5 star", "count": 2892 }
+      ]
+    },
+      {
+  "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400",
+  "title": "DesignPro Studio",
+  "companyName": "CreativeSoft Ltd.",
+  "id": 16,
+  "description": "DesignPro Studio is a comprehensive mobile design application tailored for both beginner and professional designers. It allows users to create, edit, and export high-quality graphics, illustrations, and UI layouts directly from their mobile devices. The app offers advanced tools such as vector editing, layering, gradient control, typography customization, and smart color palettes. It supports popular design formats like SVG, PNG, and PSD for seamless workflow integration. Users can collaborate in real time, sync projects to the cloud, and access a vast collection of templates, icons, and fonts. DesignPro Studio redefines mobile creativity with efficiency and precision.",
+  "size": 172.4,
+  "reviews": 6421,
+  "ratingAvg": 4.6,
+  "downloads": "10M",
+  "ratings": [
+    { "name": "1 star", "count": 192 },
+    { "name": "2 star", "count": 384 },
+    { "name": "3 star", "count": 1128 },
+    { "name": "4 star", "count": 2785 },
+    { "name": "5 star", "count": 1932 }
+  ]
+}
+]
