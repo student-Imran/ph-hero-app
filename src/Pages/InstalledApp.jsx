@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const InstalledApp = () => {
+   
+    const [saveData,setSaveData] = useState([]);
+    useEffect(()=>{
+        const existingItem = JSON.parse(localStorage.getItem('InstalledList')) ;
+        if(existingItem) setSaveData(existingItem);
+    },[])
+
     return (
         <div>
-            <h1>Installed app</h1>
+                 <h1>{saveData.length}</h1>
         </div>
     );
 };
