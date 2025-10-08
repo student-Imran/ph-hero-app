@@ -5,8 +5,7 @@ const useApps = () => {
     const [apps, setApps] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
-    useEffect(() => {
+      useEffect(() => {
         setLoading(true);
         setError(null); 
         axios('../AppData.json')
