@@ -8,17 +8,15 @@ const RootLayouts = () => {
     return (
         <div className='flex flex-col min-h-screen'>
             <Navbar></Navbar>
-            <div className='flex-1 bg-[#fafafa]'>
-                <main className='bg-[#fafafa]'>
+            
+                <div className='flex-1 max-w-screen-2xl w-full bg-[#fafafa]'>
                  <Outlet></Outlet>
-                </main>
-             
-            </div>
+                </div>
             
             <Footer></Footer>
             <ToastContainer
                 position="top-center"
-                autoClose={2000}
+                autoClose={1000}
                 hideProgressBar={false}
                 newestOnTop={false}
                 closeOnClick

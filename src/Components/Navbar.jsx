@@ -20,8 +20,8 @@ const Navbar = () => {
       </ul>
     </div>
    <Link to='/' className='pl-2 md:pl-8 lg:pl-10 flex items-center gap-2 btn-ghost text-xl'>
-  <img src={logo} alt="Logo" className='w-8 h-8' />
-  <p className='m-0 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Hero.IO</p>
+  <img src={logo} alt="Logo" className='w-9 h-9' />
+  <p className='m-0 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold text-3xl'>Hero.IO</p>
   </Link>
   </div>
   <div className="navbar-center hidden lg:flex">

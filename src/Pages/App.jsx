@@ -12,7 +12,7 @@ const App = ({ app }) => {
           <img className="w-full object-cover" src={image} alt="App" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title font-bold">{title}</h2>
+          <h2 className="card-title font-bold h-10">{title}</h2>
 
           <div className="card-actions flex mt-8 justify-between">
             <div className="badge  bg-gray-50 text-green-400">

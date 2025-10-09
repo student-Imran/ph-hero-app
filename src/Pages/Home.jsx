@@ -10,7 +10,7 @@ import LoadingSpinner from './LoadingSpinner';
 
 const Home = () => {
     const data = useApps();
-    const {apps,loading,error} = data;
+    const {apps,loading} = data;
     const homeApps = apps.slice(0,8);
     if(loading) return <LoadingSpinner></LoadingSpinner>
     
@@ -19,7 +19,7 @@ const Home = () => {
             <div className="hero mt-8">
   <div className="hero-content text-center">
     <div className="max-w-3xl">
-      <h1 className="text-5xl font-bold">We Build <br />
+      <h1 className="text-5xl font-bold text-[#001931]">We Build <br />
     <span className='text-blue-600 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h1>
       <p className="py-6 text-gray-400"> 
         At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.

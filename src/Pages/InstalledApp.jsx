@@ -55,7 +55,7 @@ if(loading) return <LoadingSpinner></LoadingSpinner>
         await handleRemoveInstalledItem(id);
         toast.success(`${title} deleted from your device`);
     } catch (error) {
-        toast.error('Failed to delete item!');
+        toast.error('Failed to delete item!',error);
     }
 };
 
@@ -63,14 +63,14 @@ if(loading) return <LoadingSpinner></LoadingSpinner>
   return (
     <div className="space-y-6">
       <div className="max-w-11/12 w-[100%] mx-auto my-10 ">
-        <h1 className="text-center font-bold text-4xl">Your Installed Apps</h1>
+        <h1 className="text-center font-bold text-4xl text-[#001931]">Your Installed Apps</h1>
         <br />
         <p className=" text-center text-gray-400">
           Explore All Trending Apps on the Market developed by us
         </p>
         <br />
         <div className="flex justify-between  my-6">
-          <h1 className="font-bold text-2xl">
+          <h1 className="font-bold text-2xl text-[#001931]">
             (<span>{saveData.length}</span>) Apps found
           </h1>
           <label className="form-control w-full max-w-xs">

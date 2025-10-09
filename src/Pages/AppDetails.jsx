@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import download from "../assets/icon-downloads.png";
@@ -9,11 +9,18 @@ import Ratings from "./Ratings";
 import { toast } from "react-toastify";
 import LoadingSpinner from "./LoadingSpinner";
 import ErrorApp from "./ErrorApp";
+import { useEffect, useState } from "react";
 
 const AppDetails = () => {
   const { id } = useParams();
-  const { apps, loading, error } = useApps();
-  
+  const { apps, loading} = useApps();
+  const [installed,setInstalled] = useState(false);
+  useEffect(()=>{
+      const item = localStorage.getItem(`installedItem_${id}`)
+      if(item){
+        setInstalled(true)
+      }
+  },[id])
   if (loading) return <LoadingSpinner></LoadingSpinner>
   const details = apps ? apps.find((ap) => String(ap.id) === id) : undefined;
   if (!details) {
@@ -35,6 +42,7 @@ const AppDetails = () => {
   // let ins="Install Now";
 
   const handleInstalled = () => {
+    localStorage.setItem(`installedItem_${id}`,true)
     const existingItems =
       JSON.parse(localStorage.getItem("InstalledList")) || [];
     const isDuplicate = existingItems.some((item) => item.id === details.id);
@@ -46,16 +54,9 @@ const AppDetails = () => {
     toast.success(`Yahoo! ${title} Installed Successfully`);
     const updatedList = [...existingItems, details];
     localStorage.setItem("InstalledList", JSON.stringify(updatedList));
-     setTimeout(() => {
-        window.location.reload();
-    }, 2000); 
+    
   };
 
-  const isInstalled = () => {
-    const existingItems =
-      JSON.parse(localStorage.getItem("InstalledList")) || [];
-    return existingItems.some((item) => item.id === details.id);
-  };
 
   return (
     <div className="max-w-11/12 mx-auto w-[100%] pt-16 ">
@@ -93,10 +94,13 @@ const AppDetails = () => {
             </div>
           </div>
           <button
-            onClick={handleInstalled}
+            onClick={()=>{
+              setInstalled(true)
+              handleInstalled()
+            }}
             className="bg-[rgba(0,211,144,1)] mt-3 py-2 px-3 rounded-2xl text-white cursor-pointer font-bold disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
-            {isInstalled() ? `✅ Installed ` : `⬇️ Install Now ${size}MB`}
+            {installed? `✅ Installed ` : `⬇️ Install Now ${size}MB`}
           </button>
         </div>
       </div>
@@ -106,7 +110,7 @@ const AppDetails = () => {
       <div>
         <h1 className="text-2xl font-bold">Description</h1>
         <br />
-        <p>{description}</p>
+        <p className="text-gray-500 leading-loose">{description}</p>
       </div>
     </div>
   );

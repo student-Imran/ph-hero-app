@@ -6,7 +6,7 @@ import LoadingSpinner from "./LoadingSpinner";
 
 
 const Apps = () => {
-  const { apps, loading, error } = useApps();
+  const { apps, loading} = useApps();
   const [search, setSearch] = useState("");
   const [searchLoading, setSearchLoading] = useState(false);
 
@@ -31,7 +31,7 @@ const Apps = () => {
   return (
     <div>
       <div className="max-w-11/12 w-[100%] mx-auto my-10">
-        <h1 className="text-center font-bold text-4xl">Our All Applications</h1>
+        <h1 className="text-center font-bold text-4xl text-[#001931]">Our All Applications</h1>
         <br />
         <p className="text-center text-gray-400">
           Explore All Apps on the Market developed by us. We code for Millions
