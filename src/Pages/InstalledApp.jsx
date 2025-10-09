@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
+import { toast } from "react-toastify";
 const InstalledApp = () => {
   const [saveData, setSaveData] = useState([]);
 
@@ -32,6 +33,29 @@ const InstalledApp = () => {
     }
   }
 
+
+   const handleRemoveInstalledItem = (id)=>{
+    console.log(id);
+    
+    const existingItem = JSON.parse(localStorage.getItem('InstalledList')) ;
+        let updatedList = existingItem.filter(p=>p.id!==id)
+         setSaveData(updatedList)
+        localStorage.setItem('InstalledList',JSON.stringify(updatedList))
+   }
+
+
+
+
+   const handleDelete = async (id,title) => {
+    try {
+        await handleRemoveInstalledItem(id);
+        toast.success(`${title} deleted from your device`);
+    } catch (error) {
+        toast.error('Failed to delete item!');
+    }
+};
+
+
   return (
     <div className="space-y-6">
       <div className="max-w-11/12 w-[100%] mx-auto my-10 ">
@@ -57,9 +81,9 @@ const InstalledApp = () => {
         </div>
       </div>
        <br /><br />
-      <div className="space-y-3 max-w-11/12 w-[100%] mx-auto">
+      <div className="space-y-6 max-w-11/12 w-[100%] mx-auto">
         {sortedItem().map((p) => (
-          <div className="flex shadow-sm p-4 rounded-2xl hover:scale-105 transition ease-in-out cursor-pointer  gap-8">
+          <div className="flex shadow-sm p-4 rounded-2xl hover:scale-104 transition ease-in cursor-pointer  gap-8">
             <figure className="">
               <img className="h-32 w-40" src={p.image} alt="App" />
             </figure>
@@ -80,7 +104,7 @@ const InstalledApp = () => {
                 </div>
               </div>
                 </div>
-              <button className="bg-[rgba(0,211,144,1)] rounded-2xl text-white cursor-pointer font-bold p-3"
+              <button onClick={()=>handleDelete(p.id,p.title)} className="bg-[rgba(0,211,144,1)] rounded-2xl text-white cursor-pointer font-bold p-3"
               >
                 Uninstall
               </button>

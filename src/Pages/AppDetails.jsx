@@ -6,6 +6,7 @@ import star from '../assets/icon-ratings.png'
 import review from '../assets/icon-review.png'
 
 import Ratings from './Ratings';
+import { toast } from 'react-toastify';
 
 
 const AppDetails = () => {
@@ -38,6 +39,14 @@ const AppDetails = () => {
         }
         localStorage.setItem('InstalledList',JSON.stringify(updatedList))
     }
+      const handleAdded = async (title) => {
+        try {
+            await handleInstalled();
+            toast.success(`Yahoo! ${title} Installed Successfully`);
+        } catch (error) {
+            toast.error('Failed to delete item!');
+        }
+    };
     
     return (
         <div className='max-w-11/12 mx-auto w-[100%] pt-16 '>
@@ -66,7 +75,7 @@ const AppDetails = () => {
                     </div>
                     <button onClick={() => 
                         
-                        handleInstalled()
+                        handleAdded(title)
                         
                         } className='bg-[rgba(0,211,144,1)] mt-3 py-2 px-3 rounded-2xl text-white cursor-pointer font-bold'>Install Now (<span>{size}MB</span>)</button>
                 
