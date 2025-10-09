@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import useApps from "../Hooks/useApps";
 import App from "./App";
 import NoApps from "./NoApps";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Apps = () => {
-  const { apps } = useApps();
+  const data = useApps()
+  const { apps,loading,error } = data;
   const [search,setSearch] = useState('');
   const searchItem = search.trim().toLocaleLowerCase()
-  console.log(searchItem);
   
   const searchApp = searchItem?apps.filter((app)=>app.title.toLocaleLowerCase().includes(searchItem)):apps
-  
+  if(loading) return <LoadingSpinner></LoadingSpinner>
   
   
   

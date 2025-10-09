@@ -6,12 +6,13 @@ import useApps from '../Hooks/useApps';
 import App from './App';
 import Apps from './Apps';
 import { NavLink } from 'react-router';
+import LoadingSpinner from './LoadingSpinner';
 
 const Home = () => {
     const data = useApps();
     const {apps,loading,error} = data;
     const homeApps = apps.slice(0,8);
-    
+    if(loading) return <LoadingSpinner></LoadingSpinner>
     
     return (
         <div>

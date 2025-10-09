@@ -9,7 +9,10 @@ const RootLayouts = () => {
         <div className='flex flex-col min-h-screen'>
             <Navbar></Navbar>
             <div className='flex-1'>
-             <Outlet></Outlet>
+                <main className='bg-[#ffffff]'>
+                 <Outlet></Outlet>
+                </main>
+             
             </div>
             
             <Footer></Footer>

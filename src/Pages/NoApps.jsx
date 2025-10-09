@@ -1,5 +1,6 @@
 import React from 'react';
 import sad from '../assets/sad1.jpg'
+import { Link } from 'react-router';
 const NoApps = () => {
     return (
         <div className="grid place-items-center col-span-4 w-full">
@@ -9,6 +10,7 @@ const NoApps = () => {
       <img src={sad} alt="Sad" className="w-full h-full object-contain" />
     </figure>
   </div>
+  
 </div>
     );
 };
