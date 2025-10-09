@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
 import { toast } from "react-toastify";
+import useApps from "../Hooks/useApps";
+import LoadingSpinner from "./LoadingSpinner";
 const InstalledApp = () => {
+  const {loading} = useApps();
+  
   const [saveData, setSaveData] = useState([]);
 
   const [sortOrder,setSortOrder]=useState('none')
@@ -11,7 +15,7 @@ const InstalledApp = () => {
     const existingItem = JSON.parse(localStorage.getItem("InstalledList"));
     if (existingItem) setSaveData(existingItem);
   }, []);
-
+if(loading) return <LoadingSpinner></LoadingSpinner>
   const sortedItem = ()=>{
     console.log(sortOrder);
     
@@ -83,7 +87,7 @@ const InstalledApp = () => {
        <br /><br />
       <div className="space-y-6 max-w-11/12 w-[100%] mx-auto">
         {sortedItem().map((p) => (
-          <div className="flex shadow-sm p-4 rounded-2xl hover:scale-104 transition ease-in cursor-pointer  gap-8">
+          <div className="flex shadow-sm p-4 rounded-2xl hover:scale-102 transition ease-in cursor-pointer  gap-8 bg-white">
             <figure className="">
               <img className="h-32 w-40" src={p.image} alt="App" />
             </figure>

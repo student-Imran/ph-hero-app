@@ -8,14 +8,16 @@ import review from "../assets/icon-review.png";
 import Ratings from "./Ratings";
 import { toast } from "react-toastify";
 import LoadingSpinner from "./LoadingSpinner";
+import ErrorApp from "./ErrorApp";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading, error } = useApps();
+  
   if (loading) return <LoadingSpinner></LoadingSpinner>
   const details = apps ? apps.find((ap) => String(ap.id) === id) : undefined;
   if (!details) {
-    return <p>App details not found or failed to load data.</p>;
+    return <ErrorApp></ErrorApp>;
   }
 
   const {

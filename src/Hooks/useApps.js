@@ -18,8 +18,10 @@ const useApps = () => {
                 setError(err); 
             })
             .finally(() => {
+                setTimeout(() => {
+       setLoading(false);
+    }, 500); 
                 
-                setLoading(false);
             });
     }, []);
 

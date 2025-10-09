@@ -8,8 +8,8 @@ const RootLayouts = () => {
     return (
         <div className='flex flex-col min-h-screen'>
             <Navbar></Navbar>
-            <div className='flex-1'>
-                <main className='bg-[#ffffff]'>
+            <div className='flex-1 bg-[#fafafa]'>
+                <main className='bg-[#fafafa]'>
                  <Outlet></Outlet>
                 </main>
              
