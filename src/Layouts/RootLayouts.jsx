@@ -3,11 +3,10 @@ import Navbar from '../Components/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Components/Footer';
 import { ToastContainer } from 'react-toastify';
-import { InstalledProvider } from '../Pages/InstalledContext'; // ✅ Context import
+import { InstalledProvider } from '../Pages/InstalledContext';
 
 const RootLayouts = () => {
   return (
-    // ✅ পুরো layout-কে context provider দিয়ে wrap করো
     <InstalledProvider>
       <div className="flex flex-col min-h-screen">
         <Navbar />

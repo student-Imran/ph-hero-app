@@ -44,7 +44,6 @@ const AppDetails = () => {
     ratings,
   } = details;
 
-  // let ins="Install Now";
 
   const handleInstalled = () => {
     
