@@ -9,18 +9,23 @@ import Ratings from "./Ratings";
 import { toast } from "react-toastify";
 import LoadingSpinner from "./LoadingSpinner";
 import ErrorApp from "./ErrorApp";
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect } from "react";
+import { InstalledContext } from "./InstalledContext";
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading} = useApps();
-  const [installed,setInstalled] = useState(false);
+  const { installed, setInstalled } = useContext(InstalledContext);
+  
   useEffect(()=>{
-      const item = localStorage.getItem(`installedItem_${id}`)
-      if(item){
-        setInstalled(true)
-      }
-  },[id])
+    const item = localStorage.getItem(`installedItem_${id}`);
+    if(item){
+       setInstalled(true);
+    }
+    else{
+      setInstalled(false)
+    }
+}, []);
+
   if (loading) return <LoadingSpinner></LoadingSpinner>
   const details = apps ? apps.find((ap) => String(ap.id) === id) : undefined;
   if (!details) {
@@ -42,7 +47,7 @@ const AppDetails = () => {
   // let ins="Install Now";
 
   const handleInstalled = () => {
-    localStorage.setItem(`installedItem_${id}`,true)
+    
     const existingItems =
       JSON.parse(localStorage.getItem("InstalledList")) || [];
     const isDuplicate = existingItems.some((item) => item.id === details.id);
@@ -97,6 +102,7 @@ const AppDetails = () => {
             onClick={()=>{
               setInstalled(true)
               handleInstalled()
+              localStorage.setItem(`installedItem_${id}`,true)
             }}
             className="bg-[rgba(0,211,144,1)] mt-3 py-2 px-3 rounded-2xl text-white cursor-pointer font-bold disabled:bg-gray-400 disabled:cursor-not-allowed"
           >

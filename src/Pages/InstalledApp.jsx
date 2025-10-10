@@ -1,11 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import download from '../assets/icon-downloads.png'
 import star from '../assets/icon-ratings.png'
 import { toast } from "react-toastify";
 import useApps from "../Hooks/useApps";
 import LoadingSpinner from "./LoadingSpinner";
+import { InstalledContext } from "./InstalledContext";
 const InstalledApp = () => {
   const {loading} = useApps();
+  
+  const { installed, setInstalled } = useContext(InstalledContext);
+  // console.log('Installed ', installed);
   
   const [saveData, setSaveData] = useState([]);
 
@@ -17,7 +21,7 @@ const InstalledApp = () => {
   }, []);
 if(loading) return <LoadingSpinner></LoadingSpinner>
   const sortedItem = ()=>{
-    console.log(sortOrder);
+    // console.log(sortOrder);
     
     if(sortOrder==='download-asc'){
                return [...saveData].sort((a, b) => {
@@ -39,7 +43,6 @@ if(loading) return <LoadingSpinner></LoadingSpinner>
 
 
    const handleRemoveInstalledItem = (id)=>{
-    console.log(id);
     
     const existingItem = JSON.parse(localStorage.getItem('InstalledList')) ;
         let updatedList = existingItem.filter(p=>p.id!==id)
@@ -108,7 +111,11 @@ if(loading) return <LoadingSpinner></LoadingSpinner>
                 </div>
               </div>
                 </div>
-              <button onClick={()=>handleDelete(p.id,p.title)} className="bg-[rgba(0,211,144,1)] rounded-2xl text-white cursor-pointer font-bold p-3"
+              <button onClick={()=>{
+               handleDelete(p.id,p.title)
+               installed?setInstalled(false):setInstalled(true)
+               localStorage.removeItem(`installedItem_${p.id}`)
+              }} className="bg-[rgba(0,211,144,1)] rounded-2xl text-white cursor-pointer font-bold p-3"
               >
                 Uninstall
               </button>
