@@ -9,13 +9,15 @@ const RootLayouts = () => {
   return (
     <InstalledProvider>
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+        <Navbar></Navbar>
 
-        <main className="flex-1 max-w-screen-2xl w-full bg-[#fafafa]">
-          <Outlet />
+        <main className="flex-grow w-full bg-[#fafafa]">
+          <Outlet></Outlet>
         </main>
 
-        <Footer />
+        <div className="mt-auto">
+          <Footer></Footer>
+        </div>
 
         <ToastContainer
           position="top-center"

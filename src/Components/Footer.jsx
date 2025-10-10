@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 import { Link } from 'react-router';
 const Footer = () => {
     return (
-<footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 mb-0">
+<footer className="footer w-full sm:footer-horizontal bg-base-200 text-base-content p-10 mb-0">
   <aside>
     {/* <svg
       width="50"

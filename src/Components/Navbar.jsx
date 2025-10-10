@@ -17,6 +17,12 @@ const Navbar = () => {
        <li><NavLink className="font-semibold" to="/">Home</NavLink></li>
         <li><NavLink className="font-semibold" to="/apps">Apps</NavLink></li>
         <li><NavLink className="font-semibold" to="/installed">Installation</NavLink></li>
+         <button 
+  onClick={() => window.open('https://github.com/student-imran', '_blank')}
+  className="btn text-white  flex items-center gap-2 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]"
+>
+  <span className='flex justify-around gap-2'><img src={github} alt="" /> <p>Contribute</p> </span>
+</button>
       </ul>
     </div>
    <Link to='/' className='pl-2 md:pl-8 lg:pl-10 flex items-center gap-2 btn-ghost text-xl'>
@@ -33,7 +39,7 @@ const Navbar = () => {
         <li><NavLink className="font-semibold" to="/installed">Installation</NavLink></li>
     </ul>
   </div>
-  <div className="navbar-end pr-2 md:pr-8 lg:pr-10 ">
+  <div className="navbar-end pr-2 md:pr-8 lg:pr-10 hidden lg:flex">
     <button 
   onClick={() => window.open('https://github.com/student-imran', '_blank')}
   className="btn text-white  flex items-center gap-2 bg-gradient-to-tr from-[#632EE3] to-[#9F62F2]"

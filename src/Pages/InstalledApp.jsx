@@ -66,13 +66,13 @@ if(loading) return <LoadingSpinner></LoadingSpinner>
   return (
     <div className="space-y-6">
       <div className="max-w-11/12 w-[100%] mx-auto my-10 ">
-        <h1 className="text-center font-bold text-4xl text-[#001931]">Your Installed Apps</h1>
+        <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl text-[#001931]">Your Installed Apps</h1>
         <br />
         <p className=" text-center text-gray-400">
           Explore All Trending Apps on the Market developed by us
         </p>
         <br />
-        <div className="flex justify-between  my-6">
+        <div className="flex justify-between flex-col md:flex-row lg:flex-row space-y-4 md:space-y-0 lg:space-y-0  my-6">
           <h1 className="font-bold text-2xl text-[#001931]">
             (<span>{saveData.length}</span>) Apps found
           </h1>
@@ -90,14 +90,14 @@ if(loading) return <LoadingSpinner></LoadingSpinner>
        <br /><br />
       <div className="space-y-6 max-w-11/12 w-[100%] mx-auto">
         {sortedItem().map((p) => (
-          <div className="flex shadow-sm p-4 rounded-2xl hover:scale-102 transition ease-in cursor-pointer  gap-8 bg-white">
+          <div className="flex flex-col md:flex-row lg:flex-row shadow-sm p-4 my-4 rounded-2xl hover:scale-102 transition ease-in cursor-pointer  gap-8 bg-white">
             <figure className="">
               <img className="h-32 w-40" src={p.image} alt="App" />
             </figure>
-            <div className="flex flex-1 justify-between items-center">
+            <div className="flex flex-1  justify-between items-center">
                 <div className="max-w-5/12 w-[100%] ">
               <h1 className="font-semibold pb-2 text-2xl">{p.title}</h1>
-              <div className="flex justify-between items-center space-x-4 max-w-5/11 mt-4">
+              <div className="flex justify-between items-center  space-x-4 max-w-5/11 mt-4">
                 <div className="flex space-x-2 items-center">
                     <figure className="w-6 h-6"><img src={download} alt="" /></figure>
                   <h3 className="text-gray-500 text-xl">{p.downloads}</h3>
